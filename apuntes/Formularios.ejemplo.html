@@ -1,20 +1,48 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
+
+<head>
     <title>Formulario</title>
-    </head>
-    <body>
-        <h2>Formulario Basico</h2>
-        
-        <form action="procesar.php" method="post">
-            <label>Edad:</label>
-            <input type="number" name="Edad" placeholder="Coloque su edad aqui"/> 
-                  <br><br>
-           <label>Nombre:</label>
-    
-            <input type="text" name="Nombre" placeholder="Coloque su Nombre aqui"/>
-          <br><br>
-            <input type="submit" value="Enviar">
-        </form>
-    </body>
+</head>
+
+<body>
+    <h2>Formulario Basico</h2>
+
+    <form action="procesar.php" method="post">
+        <label>Edad:</label>
+        <input type="number" name="Edad" placeholder="Coloque su edad aqui" />
+        <br><br>
+        <label>Nombre:</label>
+
+        <input type="text" name="Nombre" placeholder="Coloque su Nombre aqui" />
+        <br><br>
+        <input type="submit" value="Enviar">
+        <fieldset>
+            <legend>Personaje</legend>
+            <label>Superheroe Favorito</label>
+            <br>
+            <select name="Superheroe Favorito">
+                <option value="">--------</option>
+                <option value="Hulk">Hulk</option>
+                <option value="spiderman">spiderman</option>
+                <option value="thor">Thor</option>
+                <option value="miguel">miguel</option>
+            </select>
+            <br>
+            <label>Color</label>
+            <br>
+            <input type="color">
+            <br>
+        </fieldset>
+        <fieldset>
+            <legend>Datos de contacto</legend>
+            <label>Nombre</label>
+            <input type="text">
+            <br><br>
+            <label>Telefono</label>
+            <input type="text">
+        </fieldset>
+    </form>
+</body>
+
 </html>
