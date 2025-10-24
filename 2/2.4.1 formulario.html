@@ -8,19 +8,19 @@
     <form method="post">
         <fieldset>
             <legend>Personaje</legend>
-            <label>Superheroe Favorito</label> 
+            <label>Superheroe Favorito</label>
             <br>
             <input list="superheroes lista" name="superheroe" placeholder="Escribre el superheroe">
             <datalist id="superheroes lista"> <!--Funciona como un recomendador de opciones y encima te deja escribir-->
-            <option label="Hulk" value="hulk"></option>
-            <option label="Spiderman" value="spiderman"></option>
-            <option label="Thor" value="thor"></option>
-            <option label="Miguel" value="miguel"></option>
+                <option label="Hulk" value="hulk"></option>
+                <option label="Spiderman" value="spiderman"></option>
+                <option label="Thor" value="thor"></option>
+                <option label="Miguel" value="miguel"></option>
             </datalist>
             <br>
             <label>Color</label>
             <br>
-            <input type="color">
+            <input type="color" name="Color">
             <br>
         </fieldset>
         <fieldset>
@@ -29,8 +29,8 @@
             <input type="text">
             <br><br>
             <label>Telefono</label>
-            <input type="number">
-            <label>Formato +34 623455678</label>
+            <input type="number" name="number">
+            <small>Formato +34 623455678</small>
             <br><br>
 
         </fieldset> <br><input type="submit">

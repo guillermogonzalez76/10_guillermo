@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <style>   label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input[type=radio]+label,
+        input[type=checkbox]+label {
+            display: inline;
+        }
+
+        input[type=submit],
+        input[type=reset],
+        button[type=submit],
+        button[type=reset] {
+            display: inline;
+            margin-right: 10px;
+            margin-top: 15px;
+            color: white;
+            border-radius: 10px;
+        }
+
+        input[type=submit], button[type=submit] {
+            background-color: rgb(79, 60, 96);
+        }
+
+        button[type=reset], input[type=reset] {
+            background-color: rgb(196, 76, 20);
+        }
+
+        *:required {
+            border-color: gold; }
+            </style>
+    <title>Formulario</title>
+</head>
+<body>
+    <form method="post" action="mailto:guillermo.gonzalez76@educa.madrid.org">
+        <fieldset>
+            <legend>Personaje</legend>
+            <label>Superheroe Favorito</label>
+            <br>
+            <input list="superheroes lista" name="superheroe" placeholder="Escribre el superheroe">
+            <datalist id="superheroes lista"> <!--Funciona como un recomendador de opciones y encima te deja escribir-->
+                <option label="Hulk" value="hulk"></option>
+                <option label="Spiderman" value="spiderman"></option>
+                <option label="Thor" value="thor"></option>
+                <option label="Miguel" value="miguel"></option>
+            </datalist>
+            <br>
+            <label>Color</label>
+            <br>
+            <input type="color" name="Color">
+            <br>
+        </fieldset>
+        <fieldset>
+            <legend>Datos de contacto</legend>
+            <label>Nombre</label>
+            <input type="text" placeholder="Nombre apellidos">
+            <br><br>
+            <label>Telefono</label>
+            <input type="number" name="number" placeholder="+34 600000000">
+            <small>Formato +34 623455678</small>
+            <br><br>
+            <label>Fecha</label>
+            <input type="date">
+            <label>Contraseña</label>
+            <input type="password" placeholder="contraseña">
+        </fieldset> 
+        <fieldset>
+        <legend>Selecciona forma de contacto preferida:</legend>
+        <input type="radio" name="contacto" value="email"/>Email
+        <input type="radio" name="contacto" value="Telefono"/>Telefono
+        <input type="radio" name="contacto" value="Carta"/>Carta
+        </fieldset>
+        <fieldset>
+            <legend>Elige tus asignaturas favoritas</legend>
+            <div><input type="checkbox" name="asignatura" value="Aplicaciones web" />Aplicaciones web</div>
+            <div><input type="checkbox"name="asignatura" value="Seguridad informatica"/>Seguridad informatica</div>
+            
+        </fieldset>
+        <fieldset>
+            <legend>tipos extra</legend> 
+             <input type="week" name="week"/>Cuantas semanas llevas en tu proyecto <br><br>
+             <input type="month"name="month">En que mes naciste y en que año <br><br>
+             <input type="url" name="url"/>Dime la url que quieras, exista o Nombre <br><br>
+             <input type="time" name="time"/> Dime la hora que quieras <br><br>
+             <input type="range" name="range" min="0" max="100"/> dime lo que te gusta la programacion del 0 al 100
+        </fieldset>
+<br><input type="submit"><input type="reset">    
+</form>
+</body>
+
+
+</html>
