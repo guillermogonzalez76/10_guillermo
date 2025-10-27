@@ -58,7 +58,7 @@
         <fieldset>
             <legend>Datos de contacto</legend>
             <label>Nombre</label>
-            <input type="text" placeholder="Nombre apellidos">
+            <input type="text" placeholder="Nombre apellidos" name="Nombre">
             <br><br>
             <label>Telefono</label>
             <input type="number" name="number" placeholder="+34 600000000">
@@ -67,7 +67,7 @@
             <label>Fecha</label>
             <input type="date">
             <label>Contraseña</label>
-            <input type="password" placeholder="contraseña">
+            <input type="password" placeholder="contraseña" name="contraseña">
         </fieldset> 
         <fieldset>
         <legend>Selecciona forma de contacto preferida:</legend>
@@ -77,16 +77,21 @@
         </fieldset>
         <fieldset>
             <legend>Elige tus asignaturas favoritas</legend>
-            <div><input type="checkbox" name="asignatura" value="Aplicaciones web" />Aplicaciones web</div>
-            <div><input type="checkbox"name="asignatura" value="Seguridad informatica"/>Seguridad informatica</div>
+            <div><input type="checkbox" name="asignatura" value="Aplicaciones_web" />Aplicaciones web</div>
+            <div><input type="checkbox"name="asignatura" value="Seguridad_informatica"/>Seguridad informatica</div>
             
         </fieldset>
         <fieldset>
             <legend>tipos extra</legend> 
-             <input type="week" name="week"/>Cuantas semanas llevas en tu proyecto <br><br>
+            <label >Semanas</label> 
+            <input type="week" name="week"/>Cuantas semanas llevas en tu proyecto <br><br>
+             <label>Mes</label>
              <input type="month"name="month">En que mes naciste y en que año <br><br>
+             <label>Url</label>
              <input type="url" name="url"/>Dime la url que quieras, exista o Nombre <br><br>
+             <label>Tiempo</label>
              <input type="time" name="time"/> Dime la hora que quieras <br><br>
+            <label>Rango</label>
              <input type="range" name="range" min="0" max="100"/> dime lo que te gusta la programacion del 0 al 100
         </fieldset>
 <br><input type="submit"><input type="reset">    
