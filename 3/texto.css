@@ -1,0 +1,45 @@
+        h1 {
+            color: blue;
+        }
+
+        h2 {
+            color: darkgreen;
+        }
+
+        p {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+        }
+        .code {
+            color: crimson;
+
+        }
+        .h3 {    
+             font-style: italic;
+        }
+        .negrita {
+            font-weight: bold;
+        }
+        .gray {
+            color: gray;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .green{
+            color: green;
+            font-weight: bold;
+        }
+        .red {
+            color: red;
+            font-weight: bold;
+        }
+        .cursiva {
+            font-style: italic;
+        }
+        .blue {
+            color: blue;
+        }
+        #milhoja {
+            color: brown;
+            font-weight: bold;
+        }
