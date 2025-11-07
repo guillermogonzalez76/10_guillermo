@@ -1,0 +1,176 @@
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgrey;
+            margin: auto;
+            width: 60%;
+
+        }
+
+        table{
+            margin-top: 50px
+        }
+
+        tr:first-child>th:first-child {
+            background-color: lightgrey;
+            border: none;
+        }
+        td:nth-child(1){
+            background-color: black;
+            color: white;
+            border-radius: 20px;
+            font-size: 20px;
+        }
+        th {
+            background-color: darkblue;
+            color: white;
+        }
+
+        th:hover {
+            background-color: lightgrey;
+            color: black;
+            cursor: pointer;
+        }
+
+        td {
+            text-align: center;
+            border: 5px outset;
+        }
+
+        td:hover {
+            color: white;
+            background-color: black;
+            cursor: pointer;
+        }
+
+        .SOR {
+            background-color: brown;
+        }
+
+        .SOR:hover {
+            background-color: rgb(115, 100, 241);
+            color: black;
+            cursor: pointer;
+        }
+
+        .servred {
+            background-color: rgb(0, 68, 255);
+        }
+
+        .servred:hover {
+            background-color: rgb(0, 114, 51);
+            color: black;
+            cursor: pointer;
+        }
+
+        .empresa {
+            background-color: red;
+        }
+
+        .empresa:hover {
+            background-color: rgb(255, 153, 0);
+            color: black;
+            cursor: pointer;
+        }
+
+        .web {
+            background-color: violet;
+
+        }
+
+        .web span {
+            visibility: hidden;
+        }
+
+        .web:hover span {
+            color: black;
+            cursor: pointer;
+            visibility: visible;
+        }
+
+        .ingles {
+            background-color: pink;
+        }
+
+        .ingles:hover {
+            background-color: rgb(255, 255, 0);
+            color: black;
+            cursor: pointer;
+        }
+
+        .python {
+            background-color: blueviolet;
+        }
+
+        .python:hover {
+            background-color: rgb(0, 255, 255);
+            color: black;
+            cursor: pointer;
+        }
+
+        .seguridad {
+            background-color: rosybrown;
+        }
+
+        .seguridad:hover {
+            background-color: rgb(255, 102, 204);
+            color: black;
+            cursor: pointer;
+        }
+
+        .recreocasa {
+            background-color: chocolate;
+        }
+
+        .recreocasa:hover {
+            background-color: rgb(115, 100, 241);
+            color: black;
+            cursor: pointer;
+        }
+
+        .digitalizacion {
+            background-color: orange;
+        }
+
+        .Sostenibilidad {
+            background-color: grey;
+        }
+
+        .Sostenibilidad:hover {
+            background-color: rgb(136, 38, 38);
+            color: white;
+            cursor: pointer;
+        }
+
+        .hora {
+            background-color: darkseagreen;
+        }
+
+        .hora:hover {
+            background-color: green;
+            color: black;
+            cursor: pointer;
+        }
+
+        .dia {
+            background-color: rgb(23, 69, 170);
+            border-radius: 10px;
+        }
+
+        caption {
+            text-align: center;
+            background-color: purple;
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 20px;
+            border: 3px, solid black;
+            color: white;
+            padding: 5px;
+            margin-bottom: 7px;
+            font-weight: bold;
+        }
+
+        caption:hover {
+            color: green;
+            background-color: black;
+            cursor: pointer;
+        }
