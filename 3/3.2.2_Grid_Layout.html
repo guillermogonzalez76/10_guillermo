@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>3.2.2 Grid Layout</title>
+
+    <style>
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            display: grid;
+            grid-template-rows: 20% 65% 15%;
+            grid-template-columns: 25% 25% 25% 25%;
+            grid-template-areas:
+                " header header header header"
+                "main main huecofeo aside"
+                "footer footer footer footer";
+            height: 100vh;
+        }
+
+        header {
+            grid-area: header;
+            background-color: lightcoral;
+        }
+
+        main {
+            grid-area: main;
+            background-color: lightblue;
+        }
+
+        aside {
+            grid-area: aside;
+            background-color: lightgreen;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: lightgray;
+        }
+
+        .huecofeo {
+            grid-area: huecofeo;
+            background-color: rgb(105, 67, 18);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>HEADER</h1>
+        </header>
+        <main>
+            <h1>MAIN</h1>
+            <section>
+                <h2>section 2</h2>
+                <article>
+                    <p>Hola articulo 1</p>
+                </article>
+            </section>
+        </main>
+        <aside>
+            <h1>aside</h1>
+
+        </aside>
+        <footer>
+            <h1>FOOTER</h1>
+        </footer>
+
+        <div class="huecofeo">
+            <h1>HUECOFEO</h1>
+        </div>
+    </div>
+
+</body>
+
+</html>

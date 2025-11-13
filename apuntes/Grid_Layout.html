@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>3.2.2 Grid Layout</title>
+
+    <style>
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            display: grid;
+            grid-template-rows: 25% 50% 25%;
+            grid-template-columns: 50% 25% 25%;
+            grid-template-areas:
+                " header header header"
+                "main main aside"
+                "footer footer footer";
+            height: 100vh;
+        }
+
+        header {
+            grid-area: header;
+            background-color: lightcoral;
+        }
+
+        main {
+            grid-area: main;
+            background-color: lightblue;
+        }
+
+        aside {
+            grid-area: aside;
+            background-color: lightgreen;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: lightgray;}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>HEADER</h1>
+        </header>
+        <main>
+            <h1>MAIN</h1>
+            <section>
+                <h2>section 2</h2>
+                <article>
+                    <p>Hola articulo 1</p>
+                </article>
+            </section>
+        </main>
+        <aside>
+            <h1>aside</h1>
+
+        </aside>
+        <footer>
+            <h1>FOOTER</h1>
+        </footer>
+    </div>
+
+</body>
+
+</html>
