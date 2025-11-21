@@ -44,12 +44,6 @@ section {
   padding: 1em;
 }
 
-header,
-main,
-footer {
-  margin: 0 auto;
-}
-
 header {
   padding: 2em;
   text-align: center;
@@ -69,8 +63,13 @@ header section {
   grid-template-columns: 50%;
   grid-template-areas: 
   "avknowledge bknowledge"
-  "language language"
-  ;
+  "language language";
+}
+.contacto{
+  display: grid;
+  grid-template-columns: 50%;
+  grid-template-areas:
+  ""
 }
 .avknowledge{
 grid-area: avknowledge;

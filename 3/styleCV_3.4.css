@@ -1,0 +1,223 @@
+body {
+    margin: 0;
+    font-family: 'Raleway';
+    font-size: 16px;
+    line-height: 1.8em;
+}
+
+a {
+    color: #1C9C94;
+    text-decoration: none;
+}
+
+.social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    margin: 8px;
+    border-radius: 50%;
+    background: white;
+    color: #230f49;
+    font-size: 12px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    background: #4f6d7a;
+    color: white;
+}
+
+
+a:hover {
+    opacity: 0.5;
+}
+
+article {
+    padding: 0 1em;
+}
+
+section {
+    margin: 1em;
+    padding: 1em;
+}
+
+main{
+    min-height: 100vh;
+}
+
+
+header {
+    padding: 2em;
+    text-align: center;
+    background-image: url('../assets/img/bg.jpg');
+    background-size: cover;
+    background-position: fixed;
+    color: white;
+
+}
+
+header section {
+    margin: 0 auto;
+    max-width: 640px;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: 50%;
+    grid-template-areas:
+        "avknowledge bknowledge"
+        "language language"
+    ;
+}
+
+.avknowledge {
+    grid-area: avknowledge;
+}
+
+.bknowledge {
+    grid-area: bknowledge;
+}
+
+.languages {
+    grid-area: language;
+}
+
+header img {
+    border-radius: 50%;
+    max-width: 150px;
+}
+
+h1 {
+    text-transform: uppercase;
+    margin: 1em 0;
+}
+.formacionacademica > {
+font-weight: bold;  
+}
+h3 {
+    text-transform: uppercase;
+    color: #02726b;
+}
+
+h3,
+h4 {
+    font-weight: bold;
+}
+main section:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+}
+
+.fab {
+    border: 1px solid white;
+    border-radius: 50%;
+    font-size: 1.5em;
+    width: 1.5em;
+    height: 1.5em;
+    line-height: 1.5em;
+    margin: 5px;
+    text-align: center;
+}
+
+a .fab {
+    color: rgb(52, 91, 109);
+}
+
+.course .descrition p {
+    padding-left: 1em;
+}
+
+ul>li {
+    list-style-type: none;
+}
+
+section ul>li:before {
+    content: "►";
+    padding-right: 0.5em;
+    color: #509e98;
+}
+
+
+.school,
+.job-title {
+    text-transform: capitalize;
+}
+
+#experience li:before {
+    content: "✔";
+    padding-right: 0.5em;
+    color: #509e98;
+}
+
+footer {
+    padding: 1em 1.5em;
+    background: #A7B8BF;
+    color: white;
+    text-align: right;
+}
+
+header nav li {
+    text-transform: uppercase;
+    font-size: larger;
+    font-weight: bold;
+    border: 1px solid grey;
+    background-color: rgb(45, 121, 131);
+    border-radius: 5%;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+nav ul li {
+    padding: 20px;
+    list-style-type: none;
+}
+
+nav ul li.active {
+    text-decoration: underline;
+}
+
+.contacto {
+    display: grid;
+    grid-template-columns: 50%;
+    grid-template-areas:
+        "num num"
+        "correo correo"
+}
+
+.numero {
+    grid-area: "num";
+}
+
+.correo {
+    grid-area: "correo";
+}
+
+.github {
+    display: grid;
+    grid-template-columns: 50%;
+    grid-template-areas:
+        "github_url github_url"
+        "ejemplos ejemplos"
+}
+
+.ejemplos {
+    grid-area: "ejemplos";
+}
+
+.github_url {
+    grid-area: "github_url";
+}
+.cursos{
+  color: rgb(32, 151, 141);
+}
