@@ -5,9 +5,44 @@ body {
     line-height: 1.8em;
 }
 
+header {
+    padding: 2em;
+    text-align: center;
+    background-image: url('../assets/img/bg.jpg');
+    background-size: cover;
+    background-position: fixed;
+    color: white;
+
+}
+
+header img {
+    border-radius: 50%;
+    max-width: 150px;
+}
+
+h1 {
+    text-transform: uppercase;
+    margin: 1em 0;
+}
+
+header section {
+    margin: 0 auto;
+    max-width: 640px;
+}
+
 a {
     color: #1C9C94;
     text-decoration: none;
+}
+
+h3 {
+    text-transform: uppercase;
+    color: #02726b;
+}
+
+h3,
+h4 {
+    font-weight: bold;
 }
 
 .social-icons a {
@@ -44,25 +79,10 @@ section {
     padding: 1em;
 }
 
-main{
+main {
     min-height: 100vh;
 }
 
-
-header {
-    padding: 2em;
-    text-align: center;
-    background-image: url('../assets/img/bg.jpg');
-    background-size: cover;
-    background-position: fixed;
-    color: white;
-
-}
-
-header section {
-    margin: 0 auto;
-    max-width: 640px;
-}
 
 .skills {
     display: grid;
@@ -85,27 +105,10 @@ header section {
     grid-area: language;
 }
 
-header img {
-    border-radius: 50%;
-    max-width: 150px;
-}
-
-h1 {
-    text-transform: uppercase;
-    margin: 1em 0;
-}
-.formacionacademica > {
-font-weight: bold;  
-}
-h3 {
-    text-transform: uppercase;
-    color: #02726b;
-}
-
-h3,
-h4 {
+.formacionacademica> {
     font-weight: bold;
 }
+
 main section:not(:last-child) {
     border-bottom: 1px solid #ccc;
 }
@@ -138,7 +141,6 @@ section ul>li:before {
     padding-right: 0.5em;
     color: #509e98;
 }
-
 
 .school,
 .job-title {
@@ -174,8 +176,8 @@ nav a {
 
 nav ul {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
-
 }
 
 nav ul li {
@@ -189,26 +191,17 @@ nav ul li.active {
 
 .contacto {
     display: grid;
-    grid-template-columns: 50%;
-    grid-template-areas:
-        "num num"
-        "correo correo"
-}
-
-.numero {
-    grid-area: "num";
-}
-
-.correo {
-    grid-area: "correo";
+    grid-template-columns: 50% 50%;
+        word-break: break-all;
 }
 
 .github {
     display: grid;
-    grid-template-columns: 50%;
+    grid-template-columns: 50% 50%;
     grid-template-areas:
         "github_url github_url"
-        "ejemplos ejemplos"
+        "ejemplos ejemplos";
+    word-break: break-all;
 }
 
 .ejemplos {
@@ -218,6 +211,7 @@ nav ul li.active {
 .github_url {
     grid-area: "github_url";
 }
-.cursos{
-  color: rgb(32, 151, 141);
+
+.cursos {
+    color: rgb(32, 151, 141);
 }
