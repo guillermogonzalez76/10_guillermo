@@ -9,5 +9,10 @@
        console.log("Es viernes y queremos irnos:" + esviernes);
        //debuger
        if (esviernes == true){
-        console.log("Por fin es viernes vete a la meir Xulei")
+        console.log("Por fin es viernes vete a la meir Xulei");
        }
+       var alert = "Hola"
+       console.log(alert);
+       var nombreusuario = prompt ("introduzca su nombre");
+       console.log( "hola" + nombreusuario);
+       document.write("<h1>" +nombreusuario+"</h1>");
