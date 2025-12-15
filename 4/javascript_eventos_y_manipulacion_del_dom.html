@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #divcamaleon {
+            height: 700px;
+            width: 700px;
+            border: 3px black solid;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="divcamaleon" onmouseleave="adios()" onmouseenter="hola()">
+        <p>soy el div camaleo</p>
+    </div>
+    <button name="calcular" onclick="cambiarColor()" > Colorea el div<div>
+        </div></button>
+
+
+    <script>
+        function cambiarColor() {
+
+            var div = document.getElementById('divcamaleon');
+
+            var divColor = div.style.backgroundColor;
+
+            if (divColor == "brown") {
+
+                div.style.backgroundColor = "pink";
+
+            }
+            else if (divColor == "pink") {
+            
+                div.style.backgroundColor = "blue";
+            } 
+            else {
+            div.style.backgroundColor = "brown";
+            }
+        }
+        function adios(){
+       document.getElementById("divcamaleon").innerHTML += " ADIOS!";
+ }
+
+  function hola(){
+         document.getElementById("divcamaleon").innerHTML += " HOLA!";
+   }
+    </script>
+</body>
+        
+</html>
